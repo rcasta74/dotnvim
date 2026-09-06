@@ -1,5 +1,5 @@
 vim.pack.add({
-	{ src = vim.g.local_plugin .. "blink.cmp", version = vim.version.range("1.*"), name = "blink.cmp" },
+	vim.g.local_plugin .. "blink.cmp",
 })
 
 require("blink.cmp").setup({
@@ -63,6 +63,6 @@ require("blink.cmp").setup({
 		},
 	},
 
-	-- Signature help when tying
+	-- Signature help when typing
 	signature = { enabled = true },
 })

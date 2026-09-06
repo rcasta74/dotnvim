@@ -3,7 +3,7 @@ vim.pack.add({
   vim.g.local_plugin .. "gitsigns.nvim",
 })
 
-require('gitsigns').setup{
+require('gitsigns').setup({
   on_attach = function(bufnr)
     local gitsigns = require('gitsigns')
 
@@ -67,4 +67,4 @@ require('gitsigns').setup{
     -- Text object
     map({'o', 'x'}, 'ih', gitsigns.select_hunk)
   end
-}
+})
